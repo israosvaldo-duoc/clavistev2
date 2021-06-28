@@ -1,0 +1,161 @@
+
+#nombre-logo{
+    font-weight: bold;
+    font-size: 25px;
+    color: #2F7E7E;
+}
+
+h2{
+    margin-top: 20px;
+    
+}
+
+#menu-opciones{
+    margin-left: 150px;
+}
+
+#nav-inicio{
+    margin-right: 0px;
+    font-size: 18px;
+}
+
+#nav-formulario{
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+#nav-mantenedor{
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+#nav-contacto{
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+#carrousel-tamano{
+    margin-top: 20px;
+}
+
+footer {
+    background: #154949;
+    color: white;
+    padding: 60px;
+    width: 100%;
+    height: 200px;
+    text-decoration: none;
+    /*padding-bottom:200px;*/
+    bottom: 0;
+
+
+}
+
+#clima{
+    font-weight:bold;
+    color: #154949 ;
+    display:flex;
+
+}
+
+#location{
+    margin-left: 280px;
+}
+.left {
+    text-align: left;
+
+}
+
+.right {
+    text-align: right;
+
+}
+
+.promos-equipos {
+    padding-block-end: 20px;
+}
+
+#navbarTogglerDemo02>a {
+    color: white !important;
+}
+
+.button {
+    background: linear-gradient(102deg, #2F7E7E 40%, #154949 60%);
+    text-align: center;
+    color: white;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: .25rem;
+    min-width: 200px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+
+}
+
+#streamings img {
+    width: 100%;
+    padding-top: 20px;
+}
+
+#streamings img:hover {
+    border: 3px solid #f7f7f7;
+}
+
+.hm-logos {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.hm-logos img:hover {
+    border: 3px solid #f7f7f7;
+}
+
+.footer-links {
+    list-style-type: none;
+}
+
+.footer-links i {
+    color: white;
+
+}
+
+.footer-links>li {
+    display: inline-block;
+    margin: 5px;
+}
+
+#mensaje-success{
+    color: #186e6e;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#titulo-agregar-celular{
+    color: #154949;
+    margin-top: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#formulario{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 200px;
+}
+
+#div-enviar-limpiar{
+    margin-top: 50px;
+}
+
+#limpiar{
+    margin-left: 10px;
+}
+
+#titulo-listado-celulares{
+    color: #154949;
+    margin-top: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+}
+
+#container{
+    margin-bottom: 100px;
+}

@@ -1,0 +1,33 @@
+<!-- HERENCIA DESDE base.html-->
+{% extends 'core/base.html' %}
+
+<!-- CARGA DE ELEMENTOS ESTÁTICOS-->
+{% load static %}
+
+<!-- BLOQUE CSS-->
+{% block css %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'core/'%}css/style.css">
+{% endblock %}
+
+
+<!-- BlOQUE CONTENIDO-->
+{% block contenido %}
+
+<h2 id="titulo-agregar-celular">Agregar Nuevo Celular</h2>
+<form action="" method="POST" id="formulario">
+    {% csrf_token %}
+    <div class="form-group">
+        {{form.as_p}}
+        
+    </div>
+
+    <div id="div-enviar-limpiar">
+        <input class="btn btn-primary" type="submit" value="Enviar" id="enviar">
+        <input class="btn btn-secondary" type="reset" value="Limpiar" id="limpiar">
+    </div>
+</form>
+
+<div id="mensaje" class="" role="alert"> <p id="mensaje-success"> {{ mensaje }} </p></div>
+{% endblock %}

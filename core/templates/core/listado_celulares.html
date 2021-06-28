@@ -1,0 +1,39 @@
+<!-- HERENCIA DESDE base.html-->
+{% extends 'core/base.html' %}
+
+<!-- CARGA DE ELEMENTOS ESTÁTICOS-->
+{% load static %}
+
+<!-- BLOQUE CONTENIDO -->
+{% block contenido %}
+
+<h2 id="titulo-listado-celulares">Listado Celulares</h2>
+
+<table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Marca</th>
+        <th scope="col">Modelo</th>
+        <th scope="col">Compañía</th>
+        <th scope="col">Acción</th>
+      </tr>
+    </thead>
+    <!-- RECORRIDO LISTADO CELULARES-->
+    {% for cel in celulares %} 
+    <tbody> 
+      <tr>
+        <th scope="row">{{ cel.idCelular}}</th>
+        <td>{{ cel.marca }}</td>
+        <td>{{ cel.modelo }}</td>
+        <td>{{ cel.compania }}</td>      
+        <td>
+          <a href="#" class="btn btn-info">Editar</a>
+          <a href="#" class="btn btn-danger">Eliminar</a>
+        </td>
+      </tr>
+    </tbody>
+    {% endfor %}
+  </table>
+
+{% endblock %}
